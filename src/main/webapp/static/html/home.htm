@@ -1,0 +1,198 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Shopping Bee-Home</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="../css/home.css">
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+		 <style type="text/css">
+        	.carousel-inner > .item > a > img {
+    			width: 40%;
+    			margin: auto;
+			}
+			.caro {
+  				width:30em !important;
+  				height:25em !important;
+			}  
+        </style>
+
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="header">
+				<img id="logo" class="logo" src="../images/logo.png" alt="Logo" href="http://localhost:8080/ShoppingBee/static/html/home.htm">
+				<span id="title" class="title">Shopping Bee</span>
+				<div class="btn-group-vertical">
+					<a href="cart.htm" id="mycart" type="button" class="btn btn-link btn-lg" href="cart.htm">
+						<span class="glyphicon glyphicon-shopping-cart"></span> My Cart
+					</a>
+					<a href="http://localhost:8080/ShoppingBee/logout" id="logout" type="button" class="btn btn-link btn-lg" href="#">
+						<span class="glyphicon glyphicon-off"></span> Logout
+					</a>
+				</div>
+        <div class="btn-group-vertical">
+          <a href="http://localhost:8080/ShoppingBee/static/html/account.htm" id="mycart" type="button" class="btn btn-link btn-lg" href="cart.htm">
+            <span class="glyphicon glyphicon-user"></span> My Account
+          </a>
+          <a href="login.htm" id="logout" type="button" class="btn btn-link btn-lg" href="#">
+            <span class="glyphicon glyphicon-heart"></span> My Wishlist
+          </a>
+        </div>
+        <div class="btn-group-vertical">
+          <a href="http://localhost:8080/ShoppingBee/static/html/order.htm" id="mycart" type="button" class="btn btn-link btn-lg" href="cart.htm">
+            <span class="glyphicon glyphicon-tags"></span> My Orders
+          </a>
+        </div>
+			</div>
+		</div>
+		<div id="nav" class="btn-group btn-group-justified">
+			<div class="btn-group">
+				<a href="http://localhost:8080/ShoppingBee/static/html/home.htm" id="home" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-home"></span> HOME</a>
+			</div>
+			<div class="btn-group">
+				<a href="http://localhost:8080/ShoppingBee/static/html/electronics.htm" id="electronics" type="button" class="btn btn-primary">ELECTRONICS</a>
+			</div>
+			<div class="btn-group">
+				<a href="http://localhost:8080/ShoppingBee/static/html/books.htm" id="books" type="button" class="btn btn-primary">BOOKS</a>
+			</div>
+			<div class="btn-group">
+				<a href="http://localhost:8080/ShoppingBee/static/html/sports.htm" id="sports" type="button" class="btn btn-primary">SPORTS</a>
+			</div>
+			<div class="btn-group">
+				<a href="http://localhost:8080/ShoppingBee/static/html/clothes.htm" id="clothing" type="button" class="btn btn-primary">CLOTHING</a>
+			</div>
+		</div>
+		<div class="container sec" style="margin-top: 60px;" id="origContent">
+            <div class="row">
+             <a href="http://localhost:8080/ShoppingBee/static/html/electronics.htm" class="elect"><h1 class="text-center">Electronics</h1></a>
+         </div>
+            <div class="row" style="position: relative"> 
+         <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+                <a class="elect"><img src="../images/elec1.jpg" class="caro" alt="Iphone"></a>
+          </div>
+          <div class="item">
+            <a class="elect"><img src="../images/elec2.jpg" class="caro" alt="controller"></a>
+               </div>    
+          <div class="item">
+            <a class="elect"><img src="../images/elec3.jpg" class="caro" alt="Plasma"></a> 
+          </div>
+          <div class="item">
+            <a class="elect"><img src="../images/elec4.jpg" class="caro" alt="CRT"></a> 
+          </div>
+        </div>
+         </div>
+         <a class=" left carousel-control car-con" href="#myCarousel1" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control car-con" href="#myCarousel1" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+         </a>
+         </div>
+    </div>
+    <div class="container sec" style="margin-top: 60px;" id="origContent">
+            <div class="row">
+             <a href="http://localhost:8080/ShoppingBee/static/html/clothes.htm" class="clot"><h1 class="text-center">Clothes</h1></a>
+         </div>
+            <div class="row" style="position: relative"> 
+         <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+                <a class="clot"><img src="../images/cloth1.jpg" class="caro" alt="Iphone"></a>
+          </div>
+          <div class="item">
+            <a class="clot"><img src="../images/cloth2.jpg" class="caro" alt="controller"></a>
+               </div>    
+          <div class="item">
+            <a class="clot"><img src="../images/cloth3.jpg" class="caro" alt="Plasma"></a> 
+          </div>
+          <div class="item">
+            <a class="clot"><img src="../images/cloth4.jpg" class="caro" alt="CRT"></a> 
+          </div>
+        </div>
+         </div>
+         <a class=" left carousel-control car-con" href="#myCarousel2" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control car-con" href="#myCarousel2" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+         </a>
+         </div>
+    </div>
+    <div class="container sec" style="margin-top: 60px;" id="origContent">
+            <div class="row">
+             <a href="http://localhost:8080/ShoppingBee/static/html/books.htm" class="book"><h1 class="text-center">Books</h1></a>
+         </div>
+            <div class="row" style="position: relative"> 
+         <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+                <a class="book"><img src="../images/book1.jpg" class="caro" alt="Iphone"></a>
+          </div>
+          <div class="item">
+            <a class="book"><img src="../images/book2.jpg" class="caro" alt="controller"></a>
+               </div>    
+          <div class="item">
+            <a class="book"><img src="../images/book3.jpg" class="caro" alt="Plasma"></a> 
+          </div>
+          <div class="item">
+            <a class="book"><img src="../images/book4.jpg" class="caro" alt="CRT"></a> 
+          </div>
+        </div>
+         </div>
+         <a class=" left carousel-control car-con" href="#myCarousel3" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control car-con" href="#myCarousel3" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+         </a>
+         </div>
+    </div>
+     <div class="container sec" style="margin-top: 60px;padding-bottom: 50px" id="origContent">
+            <div class="row">
+             <a href="http://localhost:8080/ShoppingBee/static/html/sports.htm" class="sport"><h1 class="text-center">Sports</h1></a>
+         </div>
+            <div class="row" style="position: relative"> 
+         <div id="myCarousel4" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+                <a class="sport"><img src="../images/sports1.jpg" class="caro" alt="Iphone"></a>
+          </div>
+          <div class="item">
+            <a class="sport"><img src="../images/sports2.jpg" class="caro" alt="controller"></a>
+               </div>    
+          <div class="item">
+            <a class="sport"><img src="../images/sports3.jpg" class="caro" alt="Plasma"></a> 
+          </div>
+          <div class="item">
+            <a class="sport"><img src="../images/sports4.jpg" class="caro" alt="CRT"></a> 
+          </div>
+        </div>
+         </div>
+         <a class=" left carousel-control car-con" href="#myCarousel4" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control car-con" href="#myCarousel4" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+         </a>
+         </div>
+    </div>
+		<div class="container-fluid">
+				<div class="col-xs-12 footer">
+					<marquee>&copy Shopping Bee &#8482 Services Pvt. Ltd.</marquee>
+				</div>
+		</div>
+		<script src="../js/home.js"></script>
+	</body>
+	</html>

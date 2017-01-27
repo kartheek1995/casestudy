@@ -1,0 +1,70 @@
+.container {
+			margin:2%;
+			}
+.logo{
+	width:7%;
+	height: 7%;
+	margin-bottom: 4%
+	}
+.title{
+		font: 3.5vw 'Pacifico', Helvetica, sans-serif;
+		color:#337ab7;
+		}
+.form{
+		border: 1px solid grey;
+		height:auto;
+		border-radius:10px;
+		padding:3%;
+		}
+@media only screen and (max-width: 992px){
+	.title{
+			font-size:40px;
+			}
+	.logo{
+			width: 50px;
+			height: 50px;
+			}
+	.col-xs-12{
+		text-align: center;
+	}
+	}
+@media only screen and (max-width: 360px){
+	.title{
+			font-size:30px;
+			}
+	.logo{
+			width: 40px;
+			height: 40px;
+			}
+	.col-xs-12{
+		text-align: center;
+	}
+	}
+.footer{
+		bottom: 0px;
+		left: 0px;
+		height: 50px;
+		line-height: 50px;
+		border: 1px solid white;
+		border-radius: 5px;
+		position: fixed;
+		background-color:rgba(51,122,183,0.6);
+		color: black;
+		}	
+.error-message{
+		height:auto;
+		color: red;
+		font-size: 120%
+		}
+.logout-message{
+		height:auto;
+		color: green;
+		font-size: 120%
+		}
+.register{
+	font-size: 1.5em;
+}	
+.new{
+	margin-top:3em;
+	text-align: center;
+}	

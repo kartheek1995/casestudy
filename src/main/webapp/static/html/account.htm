@@ -1,0 +1,299 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>User Account-Shopping Bee</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="../css/home.css">
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="header">
+				<img id="logo" class="logo" src="../images/logo.png" alt="Logo" href="http://localhost:8080/ShoppingBee/static/html/home.htm">
+				<span id="title" class="title">Shopping Bee</span>
+				<div class="btn-group-vertical">
+					<a href="cart.htm" id="mycart" type="button" class="btn btn-link btn-lg" href="cart.htm">
+						<span class="glyphicon glyphicon-shopping-cart"></span> My Cart
+					</a>
+					<a href="http://localhost:8080/ShoppingBee/logout" id="logout" type="button" class="btn btn-link btn-lg" href="#">
+						<span class="glyphicon glyphicon-off"></span> Logout
+					</a>
+				</div>
+        <div class="btn-group-vertical">
+          <a href="http://localhost:8080/ShoppingBee/static/html/account.htm" id="mycart" type="button" class="btn btn-link btn-lg" href="cart.htm">
+            <span class="glyphicon glyphicon-user"></span> My Account
+          </a>
+          <a href="login.htm" id="logout" type="button" class="btn btn-link btn-lg" href="#">
+            <span class="glyphicon glyphicon-heart"></span> My Wishlist
+          </a>
+        </div>
+        <div class="btn-group-vertical">
+					<a href="http://localhost:8080/ShoppingBee/static/html/order.htm" id="mycart" type="button" class="btn btn-link btn-lg" href="cart.htm">
+						<span class="glyphicon glyphicon-tags"></span> My Orders
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="nav" class="btn-group btn-group-justified">
+			<div class="btn-group">
+				<a href="http://localhost:8080/ShoppingBee/static/html/home.htm" id="home" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-home"></span> HOME</a>
+			</div>
+			<div class="btn-group">
+				<a href="http://localhost:8080/ShoppingBee/static/html/electronics.htm" id="electronics" type="button" class="btn btn-primary">ELECTRONICS</a>
+			</div>
+			<div class="btn-group">
+				<a href="http://localhost:8080/ShoppingBee/static/html/books.htm" id="books" type="button" class="btn btn-primary">BOOKS</a>
+			</div>
+			<div class="btn-group">
+				<a href="http://localhost:8080/ShoppingBee/static/html/sports.htm" id="sports" type="button" class="btn btn-primary">SPORTS</a>
+			</div>
+			<div class="btn-group">
+				<a href="http://localhost:8080/ShoppingBee/static/html/clothes.htm" id="clothing" type="button" class="btn btn-primary">CLOTHING</a>
+			</div>
+		</div>
+
+		<div class="container" style="padding-bottom: 5%;padding-top: 5%">
+			
+			<div class="row" id="save" style="display: none">
+				<div class="col-xs-3">
+				</div>
+				<div class= "col-xs-6">
+					<div class="well well-sm" style="color: green">Changes saved successfully</div>
+				</div>
+				<div class="col-xs-3">
+				</div>
+			</div>
+
+			<div class="row" id="cant" style="display: none">
+				<div class="col-xs-3">
+				</div>
+				<div class= "col-xs-6">
+					<div class="well well-sm" style="color: red">Cannot Delete Address</div>
+				</div>
+				<div class="col-xs-3">
+				</div>
+			</div>
+				
+				<div class="row">
+				<!-- left column -->
+				<div class="col-md-3">
+					<div class="text-center">
+						<img src="../images/profilepic.png" class="avatar img-circle" alt="avatar">
+						<!-- <h6>Upload a different photo...</h6> -->
+
+						<!-- <input type="file" class="form-control"> -->
+					</div>
+				</div>
+				<div class="tab-content">
+					<div class="tab-pane active" id="a">
+						<!-- edit form column -->
+						<div class="col-md-6 personal-info">
+							<h2>Edit Profile</h2>
+							<hr>
+							<div class="alert alert-info alert-dismissable">
+								<a class="panel-close close" data-dismiss="alert">×</a> 
+								<i class="fa fa-coffee"></i>
+								<strong>To Reset Password Go to Change Password Tab</strong>
+							</div>
+							<h3>Personal info</h3>
+
+							<form class="form-horizontal" id="edit" role="form" action="http://localhost:8080/ShoppingBee/saveuserdetails" method="post">
+								<div class="form-group">
+									<label class="col-lg-3 control-label">First name:</label>
+									<div class="col-lg-8">
+										<input class="form-control" type="text" placeholder="First Name" id="fname" name="firstname">
+									</div>
+									<label id="namef" style="display:none" for="fname"><span style="color:red ;padding-left:12em">First Name should not conain spaces and not be empty</span></label>
+								</div>
+								<div class="form-group">
+									<label class="col-lg-3 control-label">Last name:</label>
+									<div class="col-lg-8">
+										<input class="form-control" type="text" placeholder="Last Name" id="lname" name="lastname">
+									</div>
+									<label id="namel" style="display:none" for="lname"><span style="color:red;padding-left:12em">Last Name should not conain spaces and not be empty</span></label>
+								</div>
+								<div class="form-group">
+									<label class="col-md-3 control-label">Username:</label>
+									<div class="col-md-8">
+										<input class="form-control" type="text" placeholder="User Name" id="uname" name="username">
+									</div>
+									<label id="nameu" style="display:none" for="uname">
+										<span style="color:red;padding-left:12em">Username should only contain lowecase letters</span></label>
+										<label id="some" style="display:none"><span style="color:red;padding-left:8em">Username already exists</span></label>
+									</div>
+									<div class="form-group">
+										<label class="col-md-3 control-label">Date of Birth:</label>
+										<div class="col-md-8">
+											<input class="form-control" type="date" placeholder="DD/MM/YYYY" name="dateofbirth">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-3 control-label">Mobile No:</label>
+										<div class="col-md-8">
+											<input class="form-control" type="text" placeholder="mobile" id="mob" name="mobileno">
+										</div>
+										<label id="cell" style="display:none" for="mob"><span style="color:red;padding-left:12em">Enter a valid mobile number!</span></label>
+									</div>
+									<div class="form-group">
+										<label class="col-md-3 control-label">Landline No:</label>
+										<div class="col-md-8">
+											<input class="form-control" type="tel" placeholder="landline" name="landlineno">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-3 control-label"></label>
+										<div class="col-md-8">
+											<button id="create" type="submit" class="btn btn-success">Save Changes</button>
+											<span></span>
+											<input type="reset" class="btn btn-default" value="Cancel">
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="tab-pane" id="b">
+							<!-- edit form column -->
+							<div class="col-md-6 personal-info">
+							<h2>Change Password</h2>
+								<hr>
+								<div class="alert alert-info alert-dismissable">
+									<a class="panel-close close" data-dismiss="alert">×</a> 
+									<i class="fa fa-coffee"></i>
+									<strong>To Edit Profile Go to Edit Profile Tab</strong>
+								</div>
+								<h3>Password Detail</h3>
+
+								<form class="form-horizontal" id="edit1" role="form" action="http://localhost:8080/ShoppingBee/resetpassworddetails" method="post">
+									<div class="form-group">
+										<label class="col-lg-3 control-label">Password:</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="password" placeholder="Password" id="pwd" name="password">
+										</div>
+										<label id="pass" style="display:none" for="pwd"><span style="color:red ;padding-left:12em">Should have atleast one lowercase,uppercase and number</span></label>
+									</div>
+									<div class="form-group">
+										<label class="col-lg-3 control-label">Confirm Password:</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="password" placeholder="Confirm Password" id="cpwd" name="repassword">
+										</div>
+										<label id="pass2" style="display:none" for="cpwd"><span style="color:red;padding-left:4em">Passwords do not match!</span></label>
+									</div>
+									<div class="form-group">
+											<label class="col-md-3 control-label"></label>
+											<div class="col-md-8">
+												<button type="submit" class="btn btn-success">Save Changes</button>
+												<span></span>
+												<input type="reset" class="btn btn-default" value="Cancel">
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="tab-pane" id="c">
+								<div class="col-md-6">
+									<h2>Add Address</h2>
+									<div class="alert alert-info alert-dismissable">
+										<a class="panel-close close" data-dismiss="alert">×</a> 
+										<i class="fa fa-coffee"></i>
+										<strong>To Reset Password Go to Edit Password Tab</strong>
+									</div>
+									<form class="form-horizontal" role="form"  action="http://localhost:8080/ShoppingBee/addaddressdetails" method="post" id="edit2">
+
+										<!-- Form Name -->
+										<legend>Address Details</legend>
+
+										<!-- Text input-->
+										<div class="form-group">
+											<label class="col-sm-2 control-label" for="textinput">Door No:</label>
+											<div class="col-sm-10">
+												<input type="text" placeholder="Door No" class="form-control" required="true" name="doorno">
+											</div>
+										</div>
+
+										<!-- Text input-->
+										<div class="form-group">
+											<label class="col-sm-2 control-label" for="textinput">Street:</label>
+											<div class="col-sm-10">
+												<input type="text" placeholder="Street Name" class="form-control" required="true" name="street">
+											</div>
+										</div>
+
+										<!-- Text input-->
+										<div class="form-group">
+											<label class="col-sm-2 control-label" for="textinput">City:</label>
+											<div class="col-sm-10">
+												<input type="text" placeholder="City" class="form-control" required="true" name="city">
+											</div>
+										</div>
+
+										<!-- Text input-->
+										<div class="form-group">
+											<label class="col-sm-2 control-label" for="textinput">State:</label>
+											<div class="col-sm-4">
+												<input type="text" placeholder="State" class="form-control" required="true" name="state">
+											</div>
+										</div>
+
+
+										<div class="form-group">
+											<label class="col-sm-2 control-label" for="textinput">Postcode:</label>
+											<div class="col-sm-4">
+												<input type="text" placeholder="Post Code" class="form-control" required="true"  pattern="[0-9]{6}" name="pincode">
+											</div>
+										</div>
+
+
+
+										<div class="form-group">
+											<label class="col-sm-2 control-label" for="sel1">Type:</label>
+											<div class="col-sm-4">
+												<select class="form-control  input-sm" id="sel1" name="type">
+													<option>Home</option>
+													<option>Office</option>
+													<option>Other</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="col-sm-offset-2 col-sm-10">
+												<button type="submit" class="btn btn-success">Save Changes</button>
+												<button type="reset" class="btn btn-default">Cancel</button>
+											</div>
+										</div>
+
+
+									</form>
+								</div>
+							</div>
+							<div class="tab-pane" id="d">
+								<div class="col-md-6" id="address">
+					
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<ul class="nav nav-pills nav-stacked">
+								<li class="active"><a data-toggle="tab" href="#a">Change UserDetails</a></li>
+								<li><a data-toggle="tab" href="#b">Reset Password</a></li>
+								<li><a data-toggle="tab" href="#c">Add Address</a></li>
+								<li><a data-toggle="tab" href="#d">View Addresses</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			
+
+
+		<div class="container-fluid">
+				<div class="col-xs-12 footer">
+					<marquee>&copy Shopping Bee &#8482 Services Pvt. Ltd.</marquee>
+				</div>
+		</div>
+		<script src="../js/register.js"></script>
+		<script src="../js/productdetails.js"></script>
+		<script src="../js/home.js"></script>
+	</body>
+	</html>

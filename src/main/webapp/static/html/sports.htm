@@ -1,0 +1,118 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Shopping Bee-Sports</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="../css/home.css">
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="header">
+				<img id="logo" class="logo" src="../images/logo.png" alt="Logo" href="http://localhost:8080/ShoppingBee/static/html/home.htm">
+				<span id="title" class="title">Shopping Bee</span>
+				<div class="btn-group-vertical">
+					<a href="cart.htm" id="mycart" type="button" class="btn btn-link btn-lg" href="cart.htm">
+						<span class="glyphicon glyphicon-shopping-cart"></span> My Cart
+					</a>
+					<a href="http://localhost:8080/ShoppingBee/logout" id="logout" type="button" class="btn btn-link btn-lg" href="#">
+						<span class="glyphicon glyphicon-off"></span> Logout
+					</a>
+				</div>
+				<div class="btn-group-vertical">
+					<a href="http://localhost:8080/ShoppingBee/static/html/account.htm" id="mycart" type="button" class="btn btn-link btn-lg" href="cart.htm">
+						<span class="glyphicon glyphicon-user"></span> My Account
+					</a>
+					<a href="login.htm" id="logout" type="button" class="btn btn-link btn-lg" href="#">
+						<span class="glyphicon glyphicon-heart"></span> My Wishlist
+					</a>
+				</div>
+				<div class="btn-group-vertical">
+					<a href="http://localhost:8080/ShoppingBee/static/html/order.htm" id="mycart" type="button" class="btn btn-link btn-lg" href="cart.htm">
+						<span class="glyphicon glyphicon-tags"></span> My Orders
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="nav" class="btn-group btn-group-justified">
+			<div class="btn-group">
+				<a href="http://localhost:8080/ShoppingBee/static/html/home.htm" id="home" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-home"></span> HOME</a>
+			</div>
+			<div class="btn-group">
+				<a href="http://localhost:8080/ShoppingBee/static/html/electronics.htm" id="electronics" type="button" class="btn btn-primary">ELECTRONICS</a>
+			</div>
+			<div class="btn-group">
+				<a href="http://localhost:8080/ShoppingBee/static/html/books.htm" id="books" type="button" class="btn btn-primary">BOOKS</a>
+			</div>
+			<div class="btn-group">
+				<a href="http://localhost:8080/ShoppingBee/static/html/sports.htm" id="sports" type="button" class="btn btn-primary">SPORTS</a>
+			</div>
+			<div class="btn-group">
+				<a href="http://localhost:8080/ShoppingBee/static/html/clothes.htm" id="clothing" type="button" class="btn btn-primary">CLOTHING</a>
+			</div>
+		</div>
+		<div class="container-fluid filter">
+
+			<div class="price col-md-3 col-sm-4 col-xs-9">
+				<div class="jumbo">
+					<strong>BRAND</strong>
+				</div>
+				<div class="checkbox">
+					<button class="range1 btn btn-block btn-info">
+						<label><input id="SG" class="rang" type="checkbox">Sanspareils Greenlands</label>
+					</button>
+				</div>
+				<div class="checkbox">
+					<button class="range2 btn btn-block btn-info">
+						<label><input id="NIV" class="rang" type="checkbox">Nivia</label>
+					</button>
+				</div><div class="checkbox">
+					<button class="range3 btn btn-block btn-info">
+						<label><input id="VX" class="rang" type="checkbox">Vector X</label>
+					</button>
+				</div>
+				<div class="checkbox">
+						<button class="range4 btn btn-block btn-info">
+							<label><input id="NB" class="rang" type="checkbox">New Balance</label>
+						</button>
+				</div>
+
+				<div class="jumbo">
+					<strong>PRICE</strong>
+				</div>
+				<div class="checkbox">
+					<button class="range1 btn btn-block btn-info">
+						<label><input id="0-999" class="range" type="checkbox">0-999</label>
+					</button>
+				</div>
+				<div class="checkbox">
+					<button class="range2 btn btn-block btn-info">
+						<label><input id="1000-1999" class="range" type="checkbox">1000-1999</label>
+					</button>
+				</div>
+				<div class="checkbox">
+					<button  class="range3 btn btn-block btn-info">
+						<label><input id="2000-9999" class="range" type="checkbox">2000-9999</label>
+					</button>
+				</div>
+				<div class="checkbox">
+					<button class="range4 btn btn-block btn-info">
+						<label><input id="10000-50000" class="range" type="checkbox">over 10000</label>
+					</button>
+				</div>
+			</div>
+			<div id="content" class="col-md-9 col-sm-8 col-xs-12">
+				
+			</div>
+		</div>
+		<div class="container-fluid">
+				<div class="col-xs-12 footer">
+					<marquee>&copy Shopping Bee &#8482 Services Pvt. Ltd.</marquee>
+				</div>
+		</div>
+		<script src="../js/sports.js"></script>
+		<script src="../js/home.js"></script>
+	</body>
+	</html>

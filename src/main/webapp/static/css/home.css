@@ -1,0 +1,198 @@
+	.header{
+		padding:0.625em;
+	}
+	.logo{
+		width:5%;
+		height: 5%;
+		margin-bottom: 2%
+	}
+	.title{
+		font: 3.5vw 'Pacifico', Helvetica, sans-serif;
+		color:#337ab7;
+	}
+	.btn-group-vertical{
+		float: right;
+		top:0.9375em;
+	}		
+	@media only screen and (max-width: 992px){
+		.title{
+			font-size:2.5em;
+		}
+		.logo{
+			width: 3.125em;
+			height: 3.125em;
+		}
+		.header{
+			text-align: center;
+		}
+		.btn-group-vertical{top:0px;}
+	}
+	@media (min-width: 768px) and (max-width: 992px){
+		#main1,#main2,#main3,#main4{
+		width:45%;
+		height:15em;
+		text-align: center;
+		margin: 0% 1% 5% 1%;
+		padding: 0.625em;
+		}
+	}
+	@media (max-width: 768px){
+		#main1,#main2,#main3,#main4{
+		width:45%;
+		height:15em;
+		text-align: center;
+		margin: 0% 1% 5% 1%;
+		padding: 0.625em;
+		}
+	}
+	@media (min-width: 992px){
+		#main1,#main2,#main3,#main4{
+		width:30%;
+		height:15em;
+		text-align: center;
+		margin: 0% 1% 5% 1%;
+		padding: 0.625em;
+		}
+	}
+	@media (max-width: 460px){
+		#main1,#main2,#main3,#main4{
+		width:90%;
+		height:15em;
+		text-align: center;
+		margin: 0% 1% 5% 1%;
+		padding: 0.625em;
+		}
+	}
+	.footer{
+		bottom: 0px;
+		left: 0px;
+		height: 3.125em;
+		line-height: 3.125em;
+		border: 1px solid white;
+		position: fixed!important;
+		border-radius: 0.3125;
+		background-color:rgba(51,122,183,0.6);
+		color: black;
+	}
+	.fullwidth{
+		width: 100%;
+	}
+	.well-sm{
+		padding-bottom: 0px;
+		background-color: white;
+		border-color: white;
+		margin-bottom: 0px;
+		margin-top: 0.625em;
+	}
+	.product-image:hover{
+		transform: scale(1.1,1.1);
+	}
+	#main1:hover,#main2:hover,#main3:hover,#main4:hover{
+		transform: scale(1.1,1.1);
+	}
+	.product-name{
+		padding-top:0.3125em;
+	}
+	#product-image{
+		text-align: center;
+	}
+	#product-details{
+		margin-top:10%;
+		font-size: 150%;
+		font-family:font-family: "Comic Sans MS", "Comic Sans", cursive;
+		text-align: center;
+	}
+	.other{
+		margin-top:10%;
+	}
+	.cart{
+		width:10em;
+		margin-left: 40%;
+		margin-bottom: 10%!important;
+		margin-top: 5%;
+	}
+	#content{
+		margin-top: 5%;
+	}
+	#electronicsimage{
+		width:60%;
+		height:auto;
+		margin-top:10%;
+	}
+	.addcart{
+		font-size: 1em;
+	}
+	#booksimage{
+		height: 480px;
+		width: 300px;
+		margin-top:10%;
+	}
+	#sportsimage{
+		width:60%;
+		height:auto;
+		margin-top:15%;
+	}
+	#clothimage{
+		width:50%;
+		height:auto;
+		margin-top:10%;
+	}
+	.jumbo{
+		text-align: center;
+		font-size: 1.2em;
+		margin-top: 5px;
+	}
+	@font-face {
+  		font-family: 'Pacifico';
+  		font-style: normal;
+ 		font-weight: 400;
+  		src: local('Pacifico Regular'), local('Pacifico-Regular'), 
+  			url(http://fonts.gstatic.com/s/pacifico/v7/Q_Z9mv4hySLTMoMjnk_rCfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, 
+  							U+2215, U+E0FF, U+EFFD, U+F000;
+	}
+	.cartitem{
+		border:1px solid grey;
+		width:100%;
+		height: auto;
+		margin-top:2.5%;
+		margin-bottom:2.5%;
+	}
+	.image{
+		width:80%;
+		height:auto;
+		margin-top:1%;
+	}
+	.text{
+		text-align: center;
+		font-size: 1.5em;
+		padding:10% 0% 10% 0%
+	}
+	.text1{
+		text-align: center;
+		font-size: 1.5em;
+		padding:5% 0% 10% 0%
+	}
+	.close{
+		float:left;
+		margin-top:2%;
+	}
+	.butt{
+		margin-bottom:5%;
+	}
+	.empty img{
+		padding-left: 30%;
+		padding-right: 30%;
+		max-width:100%;
+		height:auto;
+		margin:auto;
+	}
+	.total{
+		width:100%;
+		margin:auto;
+		border:1px solid #ddd;
+		text-align: center;
+		font-size: 1.5em;
+		background-color:powderblue;
+		margin-bottom: 5%;
+	}
